@@ -23,7 +23,7 @@ if (isset($_POST['submit_login'])) {
         if (password_verify($password, $row['password'])) {
 
 
-            // echo "Password OK<br>";
+    
 
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['last_activity'] = time();
